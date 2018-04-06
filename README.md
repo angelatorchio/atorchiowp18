@@ -1,4 +1,4 @@
 # atorchiowp18
 
-Abstraction3.html
-REI.html
+* Abstraction3.html
+* REI.html
