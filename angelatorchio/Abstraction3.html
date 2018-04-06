@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <style>
+      *, body, h1, h2 { margin: 0; }
+      body { margin: 0; }
+      section { border: 0px solid red;
+      width: 100vw;
+      height: 100vw;
+       display: grid;
+       grid-template-columns: repeat(24, 1fr);
+       grid-template-rows: repeat(23,1fr);
+       grid-gap: 0px;
+       background-color: blue;
+      }
+      .minmax {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 200px;
+        justify-items: center;
+        align-items: center;
+
+      }
+      .first div { width: 100%; height: 100%;
+   }
+
+
+      .egg { grid-column: 1/25;
+      grid-row: 2/3;
+      background: green;
+
+      }
+      .egg2 { grid-column: 1/25;
+      grid-row: 4/5;
+      background: green;
+
+      }
+      .egg3 { grid-column: 1/25;
+      grid-row: 6/7;
+      background: green;
+
+      }
+      .egg4 { grid-column: 1/25;
+      grid-row: 8/9;
+      background: green;
+
+      }
+      .egg5 { grid-column: 1/25;
+      grid-row: 10/11;
+      background: green;
+      }
+      .egg6 { grid-column: 1/25;
+      grid-row: 12/13;
+      background: green;
+      }
+      .egg7 { grid-column: 1/25;
+      grid-row: 14/15;
+      background: green;
+
+      }
+      .egg8 { grid-column: 1/25;
+      grid-row: 16/17;
+      background: green;
+      }
+      .egg9 { grid-column: 1/25;
+      grid-row: 18/19;
+      background: green;
+      }
+      .egg10 { grid-column: 1/25;
+      grid-row: 20/21;
+      background: green;
+      }
+      .egg11 { grid-column: 1/25;
+      grid-row: 22/23;
+      background: green;
+      }
+      .egg12 { grid-column: 1/25;
+      grid-row: 24/25;
+      background: green;
+      }
+      .egg13 { grid-column: 1/25;
+      grid-row: 26/27;
+      background: green;
+      }
+
+      .blueegg {grid-column: 2/3;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+
+      .blueegg2 {grid-column: 4/5;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+
+      .blueegg3 {grid-column: 6/7;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+
+      .blueegg4 {grid-column: 8/9;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+      .blueegg5 {grid-column: 10/11;
+      grid-row: 1/24;
+      background: purple;
+       opacity: .4;
+     }
+      .blueegg6 {grid-column: 12/13;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+      .blueegg7 {grid-column: 14/15;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+      .blueegg8 {grid-column: 16/17;
+      grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+    .blueegg9 {grid-column: 18/19;
+    grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+    .blueegg10 {grid-column: 20/21;
+    grid-row: 1/24;
+      background: purple;
+      opacity: .4;
+      }
+    .blueegg11 {grid-column: 22/23;
+    grid-row: 1/24;
+    color: purple;
+    opacity: .4;
+    }
+    .blueegg12 {grid-column: 24/25;
+    grid-row: 1/24;
+    color: purple;
+    opacity: .4;
+    }
+    
+
+    .egga { grid-column: 1/25;
+    grid-row: 2/3;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+
+    .egga2 { grid-column: 1/25;
+    grid-row: 4/5;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga3 { grid-column: 1/25;
+    grid-row: 6/7;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+
+    }
+    .egga4 { grid-column: 1/25;
+    grid-row: 8/9;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+
+    }
+    .egga5 { grid-column: 1/25;
+    grid-row: 10/11;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga6 { grid-column: 1/25;
+    grid-row: 12/13;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga7 { grid-column: 1/25;
+    grid-row: 14/15;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+
+    }
+    .egga8 { grid-column: 1/25;
+    grid-row: 16/17;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga9 { grid-column: 1/25;
+    grid-row: 18/19;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga10 { grid-column: 1/25;
+    grid-row: 20/21;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga11 { grid-column: 1/25;
+    grid-row: 22/23;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga12 { grid-column: 1/25;
+    grid-row: 24/25;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+    .egga13 { grid-column: 1/25;
+    grid-row: 26/27;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: .4;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <section class="first">
+      <div class="egg"></div>
+      <div class="egg2"></div>
+      <div class="egg3"></div>
+      <div class="egg4"></div>
+      <div class="egg5"></div>
+      <div class="egg6"></div>
+      <div class="egg7"></div>
+      <div class="egg8"></div>
+      <div class="egg9"></div>
+      <div class="egg10"></div>
+      <div class="egg11"></div>
+      <div class="egg12"></div>
+      <div class="egg13"></div>
+      <div class="blueegg"></div>
+      <div class="blueegg2"></div>
+      <div class="blueegg3"></div>
+      <div class="blueegg4"></div>
+      <div class="blueegg5"></div>
+      <div class="blueegg6"></div>
+      <div class="blueegg7"></div>
+      <div class="blueegg8"></div>
+      <div class="blueegg9"></div>
+      <div class="blueegg10"></div>
+      <div class="blueegg11"></div>
+      <div class="blueegg12"></div>
+      <div class="egga"></div>
+      <div class="egga2"></div>
+      <div class="egga3"></div>
+      <div class="egga4"></div>
+      <div class="egga5"></div>
+      <div class="egga6"></div>
+      <div class="egga7"></div>
+      <div class="egga8"></div>
+      <div class="egga9"></div>
+      <div class="egga10"></div>
+      <div class="egga11"></div>
+      <div class="egga12"></div>
+      <div class="egga13"></div>
+    </section>
+
+
+
+
+
+  </body>
+
+</html>
