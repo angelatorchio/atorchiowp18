@@ -1,6 +1,12 @@
 <html>
   <head>
     <style>
+    @keyframes colorit {
+      0%   { background: white; }
+      50% { margin: 20px; background: black; }
+      100% { background: white; }
+    }
+
       *, body, h1, h2 { margin: 0; }
       body { margin: 0; }
       section { border: 0px solid red;
@@ -21,6 +27,7 @@
 
       }
       .first div { width: 100%; height: 100%;
+        transition: 2s all;
    }
 
        div {     background: white;
@@ -61,6 +68,20 @@
           justify-items: center;
           align-items: center;
         }
+        @media (max-width: 1024px) {
+          div {background: purple;
+          }
+
+
+        @media (min-width: 600px) {
+          div {background: orange;}
+
+          @media (min-width: 1024px) {
+        div { animation: 5s infinite;
+              }
+}
+div:hover {background: yellow;}
+
 
 
     </style>
@@ -76,15 +97,14 @@
       <div class="egg4"></div>
       <div class="egg5"></div>
       <div class="egg6"></div>
-      <div class="blueegg"></div>
+      <div class="blueegg"><img src="star.svg"></img></div>
 
 
     </section>
 
-    <section class="image">
-      <div class=""><img src="star.svg"></img></div>
 
-    </section>
+
+
 
 
   </body>

@@ -1,0 +1,61 @@
+<html>
+  <head>
+      <title>Flex demo</title>
+    <style>
+
+     section {
+       display: flex;
+       flex-direction: row;
+       height: 90vh;
+
+     }
+
+      div {  flex-basis: 200px;
+        flex-grow: 2;
+
+         margin: 0px;
+
+}
+
+
+@media (max-width: 1024px) {
+  div {background: purple;}
+
+
+@media (min-width: 600px) {
+  div {background: orange;}
+
+
+
+      .green {
+        background-color: green;
+      }
+
+        .red {
+            background-color: red;
+          }
+
+
+        .yellow {
+                background-color: yellow;
+              }
+
+              .yellow img {
+                min-height: 85vh;
+              }
+    </style>
+  </head>
+  <body>
+
+    <section>
+
+
+        <div class="green"></div>
+        <div class="yellow">
+        <img src="Unknown.svg"></div>
+        <div class="red"></div>
+
+    </section>
+
+  </body>
+</html>
